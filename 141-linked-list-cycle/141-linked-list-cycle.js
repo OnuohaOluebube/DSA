@@ -11,21 +11,15 @@
  * @return {boolean}
  */
 var hasCycle = function(head) {
-    if(!head) {
-        return false;
-    }
+    if(head === null)  return false; 
     let hare = head;
     let tortoise = head;
     while(hare) {
-        if(!hare.next) {
-            return false;
-        } else {
+        if(hare.next === null) return false;
             hare = hare.next.next;
             tortoise = tortoise.next;
-        }
-        if(tortoise === hare) {
-            return true;
-        }
+        if(tortoise === hare) return true;
+        
     }
     return false;
 
