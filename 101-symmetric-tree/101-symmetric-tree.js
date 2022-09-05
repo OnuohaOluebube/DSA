@@ -11,7 +11,7 @@
  * @return {boolean}
  */
 var isSymmetric = function(root) {
-      if(!root) return true;
+    
   return dfs(root.left, root.right);
 };
 
