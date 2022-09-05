@@ -11,7 +11,7 @@
  * @return {boolean}
  */
 var isBalanced = function(root) {
-  
+
 	let isBalanced = true
 	function dfs(t){
 		if(!t) return 0
@@ -22,7 +22,7 @@ var isBalanced = function(root) {
 		}
 		return 1 + Math.max(left, right)
 	}
-	dfs(root)
+	  dfs(root)
   return isBalanced; 
   
 };
