@@ -11,7 +11,8 @@ class Solution:
 #             return min(dfs(i+1, currCost+cost[i]), dfs(i+2, currCost+cost[i]))
             
 #         return min(dfs(0,0), dfs(1,0))
-    
+
+    # dynamic programming method
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         dp = [0]*(len(cost)+1)
         
