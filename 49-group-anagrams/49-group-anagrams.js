@@ -10,7 +10,7 @@
  var groupAnagrams = function(strs) {
     
 
-const map = Object.create(null)
+const map = {}
   for(let str of strs){
 const hash = hashWord(str)
 if(!(hash in map)){
