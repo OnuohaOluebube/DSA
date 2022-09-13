@@ -33,8 +33,9 @@ for(let r = 0; r < 9; r ++){
         {
             return false
         }
-         cols[c].add(num);
+       
             rows[r].add(num);
+          cols[c].add(num);
             squares[grid].add(num);
     }  
 }
