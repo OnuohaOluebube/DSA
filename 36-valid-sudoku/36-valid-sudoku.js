@@ -17,7 +17,8 @@ for(let r = 0; r < 9; r ++){
             }
 
         
- const grid = `${Math.floor(r / 3)}${Math.floor(c / 3)}`;
+    const grid = `${Math.floor(r / 3)}${Math.floor(c / 3)}`;
+        
         
         if(!rows[r]) {
             rows[r] = new Set()
@@ -33,10 +34,9 @@ for(let r = 0; r < 9; r ++){
         {
             return false
         }
-       
-            rows[r].add(num);
-          cols[c].add(num);
-            squares[grid].add(num);
+        rows[r].add(num) 
+        cols[c].add(num) 
+        squares[grid].add(num)
     }  
 }
     
