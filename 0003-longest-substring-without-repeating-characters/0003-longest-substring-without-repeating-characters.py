@@ -10,7 +10,7 @@ class Solution(object):
    
         for i in s:
             while i in newSet:
-                m = max(m,(len(newSet)))
+             
                 newSet.remove(s[l])
                 l+=1
             newSet.add(i)
